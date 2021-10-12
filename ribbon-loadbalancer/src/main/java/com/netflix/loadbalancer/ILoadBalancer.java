@@ -20,6 +20,9 @@ package com.netflix.loadbalancer;
 import java.util.List;
 
 /**
+ * ribbon的核心原理：ILoadBalancer 负载均衡器
+ * 通过负载均衡器来获取调用的server 有了server才能对原始带有服务名的uri进行重构
+ *
  * Interface that defines the operations for a software loadbalancer. A typical
  * loadbalancer minimally need a set of servers to loadbalance for, a method to
  * mark a particular server to be out of rotation and a call that will choose a
